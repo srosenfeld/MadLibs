@@ -1,26 +1,26 @@
 '''
 Mad Lib Function
 ----------------
-Gets called at the end of the program and plugs in variables
+Gets called at the end of the program to 'start' the game
 '''
+
 def madlib():
-    print(noun1)
-    print(noun2)
-    print(adj1)
+    #Asks user for input
+    noun1 = input("Write in a noun")
+    noun2 = input("Write in a noun")
+    adj1 = input("Write in an adjective")
+
+    #Prints out the mad lib
+    print("The " + noun1 + " went to the store.")
+    print("The store was all out of " + noun2)
+    print("This made the " + noun1 + " feel " + adj1)
 
 
 #Print Welcome Message
 print("Welcome to Mad Libs!")
 
-#Asks user for input
-noun1 = input("Write in a noun")
-noun2 = input("Write in a noun")
-adj1 = input("Write in an adjective")
-
-
-#Plugs the variables into the MadLib and prints them out
+#Starts the MadLibs game by calling the function madlib() above
 madlib()
-
 
 '''
 Extra credit assignments
